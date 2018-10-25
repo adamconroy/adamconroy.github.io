@@ -1,0 +1,82 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+        }
+        #timer {
+            color: magenta;
+            font-size: 156px;
+            text-align: center;
+        }
+        #blocks {
+            margin: auto;
+        }
+
+        .block {
+            float: left;
+            margin: 10px;
+            border: 3px white;
+            height: 200px;
+            width: 200px;
+        }
+        .idle {
+            background-color: darkgray;
+        }
+        .prep {
+            background-color: aquamarine;
+        }
+        .active {
+            background-color: green;
+        }
+        .finished {
+            background-color:slategray;
+        }
+    </style>
+    <script type='text/javascript'>
+        var timer = 0;
+        var curBlock = 0;
+
+        function getCurBlock() {
+            return document.getElementById('block_' + curBlock);
+        }
+        function getTimer() {
+            return document.getElementById('timer');
+        }
+
+        setInterval(function() {
+            timer++;
+
+            if (timer >= 30) {
+                timer = 0;
+                getCurBlock().classList.remove('active');
+                getCurBlock().classList.add('finished');
+                curBlock++;
+                getCurBlock().classList.remove('idle');
+                getCurBlock().classList.add('prep');
+            }
+
+            getTimer().innerHTML = '' + timer;
+
+            if (timer > 10) {
+                getCurBlock().classList.remove('prep');
+                getCurBlock().classList.add('active');
+            }
+
+        }, 1000);
+    </script>
+</head>
+<body>
+    <div id='timer'>0</div>
+    <div id='blocks'>
+        <div id='block_0' class='block idle'></div>
+        <div id='block_1' class='block idle'></div>
+        <div id='block_2' class='block idle'></div>
+        <div id='block_3' class='block idle'></div>
+        <div id='block_4' class='block idle'></div>
+        <div id='block_5' class='block idle'></div>
+        <div id='block_6' class='block idle'></div>
+        <div id='block_7' class='block idle'></div>
+    <div>
+</body>
+</html>
