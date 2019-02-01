@@ -1,0 +1,329 @@
+[
+  {
+    "chess": "axe",
+    "species": ["orc"],
+    "class": "warrior",
+    "cost": 1
+  },
+  {
+    "chess": "enchantress",
+    "species": ["beast"],
+    "class": "druid",
+    "cost": 1
+  },
+  {
+    "chess": "ogre_magi",
+    "species": ["ogre"],
+    "class": "mage",
+    "cost": 1
+  },
+  {
+    "chess": "tusk",
+    "species": ["beast"],
+    "class": "warrior",
+    "cost": 1
+  },
+  {
+    "chess": "drow_ranger",
+    "species": ["undead"],
+    "class": "hunter",
+    "cost": 1
+  },
+  {
+    "chess": "bounty_hunter",
+    "species": ["goblin"],
+    "class": "assassin",
+    "cost": 1
+  },
+  {
+    "chess": "clockwerk",
+    "species": ["goblin"],
+    "class": "mech",
+    "cost": 1
+  },
+  {
+    "chess": "shadow_shaman",
+    "species": ["troll"],
+    "class": "shaman",
+    "cost": 1
+  },
+  {
+    "chess": "bat_rider",
+    "species": ["troll"],
+    "class": "knight",
+    "cost": 1
+  },
+  {
+    "chess": "tinker",
+    "species": ["goblin"],
+    "class": "mech",
+    "cost": 1
+  },
+  {
+    "chess": "anti_mage",
+    "species": ["elf"],
+    "class": "demon hunter",
+    "cost": 1
+  },
+  {
+    "chess": "crystal_maiden",
+    "species": ["human"],
+    "class": "mage",
+    "cost": 2
+  },
+  {
+    "chess": "beast_master",
+    "species": ["orc"],
+    "class": "hunter",
+    "cost": 2
+  },
+  {
+    "chess": "juggernaut",
+    "species": ["orc"],
+    "class": "warrior",
+    "cost": 2
+  },
+  {
+    "chess": "timbersaw",
+    "species": ["goblin"],
+    "class": "mech",
+    "cost": 2
+  },
+  {
+    "chess": "pain_queen",
+    "species": ["demon"],
+    "class": "assassin",
+    "cost": 2
+  },
+  {
+    "chess": "puck",
+    "species": ["elf","dragon"],
+    "class": "mage",
+    "cost": 2
+  },
+  {
+    "chess": "witch_doctor",
+    "species": ["troll"],
+    "class": "warlock",
+    "cost": 2
+  },
+  {
+    "chess": "slardar",
+    "species": ["naga"],
+    "class": "warrior",
+    "cost": 2
+  },
+  {
+    "chess": "chaos_knight",
+    "species": ["demon"],
+    "class": "knight",
+    "cost": 2
+  },
+  {
+    "chess": "treant_protector",
+    "species": ["elf"],
+    "class": "druid",
+    "cost": 2
+  },
+  {
+    "chess": "luna",
+    "species": ["elf"],
+    "class": "knight",
+    "cost": 2
+  },
+  {
+    "chess": "furion",
+    "species": ["elf"],
+    "class": "druid",
+    "cost": 2
+  },
+  {
+    "chess": "lycan",
+    "species": ["human","beast"],
+    "class": "warrior",
+    "cost": 3
+  },
+  {
+    "chess": "venomancer",
+    "species": ["beast"],
+    "class": "warlock",
+    "cost": 3
+  },
+  {
+    "chess": "omni_knight",
+    "species": ["human"],
+    "class": "knight",
+    "cost": 3
+  },
+  {
+    "chess": "razor",
+    "species": ["element"],
+    "class": "mage",
+    "cost": 3
+  },
+  {
+    "chess": "wind_ranger",
+    "species": ["elf"],
+    "class": "hunter",
+    "cost": 3
+  },
+  {
+    "chess": "phantom_assassin",
+    "species": ["elf"],
+    "class": "assassin",
+    "cost": 3
+  },
+  {
+    "chess": "abaddon",
+    "species": ["undead"],
+    "class": "knight",
+    "cost": 3
+  },
+  {
+    "chess": "sand_king",
+    "species": ["beast"],
+    "class": "assassin",
+    "cost": 3
+  },
+  {
+    "chess": "slark",
+    "species": ["naga"],
+    "class": "assassin",
+    "cost": 3
+  },
+  {
+    "chess": "sniper",
+    "species": ["dwarf"],
+    "class": "hunter",
+    "cost": 3
+  },
+  {
+    "chess": "viper",
+    "species": ["dragon"],
+    "class": "assassin",
+    "cost": 3
+  },
+  {
+    "chess": "shadow_fiend",
+    "species": ["demon"],
+    "class": "warlock",
+    "cost": 3
+  },
+  {
+    "chess": "lina",
+    "species": ["human"],
+    "class": "mage",
+    "cost": 3
+  },
+  {
+    "chess": "doom",
+    "species": ["demon"],
+    "class": "warrior",
+    "cost": 4
+  },
+  {
+    "chess": "kunkka",
+    "species": ["human"],
+    "class": "warrior",
+    "cost": 4
+  },
+  {
+    "chess": "troll_warlord",
+    "species": ["troll"],
+    "class": "warrior",
+    "cost": 4
+  },
+  {
+    "chess": "keeper_of_the_light",
+    "species": ["human"],
+    "class": "mage",
+    "cost": 4
+  },
+  {
+    "chess": "necrophos",
+    "species": ["undead"],
+    "class": "warlock",
+    "cost": 4
+  },
+  {
+    "chess": "templar_assassin",
+    "species": ["elf"],
+    "class": "assassin",
+    "cost": 4
+  },
+  {
+    "chess": "alchemist",
+    "species": ["goblin"],
+    "class": "warlock",
+    "cost": 4
+  },
+  {
+    "chess": "disruptor",
+    "species": ["orc"],
+    "class": "shaman",
+    "cost": 4
+  },
+  {
+    "chess": "medusa",
+    "species": ["naga"],
+    "class": "hunter",
+    "cost": 4
+  },
+  {
+    "chess": "dragon_knight",
+    "species": ["human","dragon"],
+    "class": "knight",
+    "cost": 4
+  },
+  {
+    "chess": "lone_druid",
+    "species": ["beast"],
+    "class": "druid",
+    "cost": 4
+  },
+  {
+    "chess": "gyrocopter",
+    "species": ["dwarf"],
+    "class": "mech",
+    "cost": 5
+  },
+  {
+    "chess": "lich",
+    "species": ["undead"],
+    "class": "mage",
+    "cost": 5
+  },
+  {
+    "chess": "tide_hunter",
+    "species": ["naga"],
+    "class": "hunter",
+    "cost": 5
+  },
+  {
+    "chess": "enigma",
+    "species": ["element"],
+    "class": "warlock",
+    "cost": 5
+  },
+  {
+    "chess": "techies",
+    "species": ["goblin"],
+    "class": "mech",
+    "cost": 5
+  },
+  {
+    "chess": "terrorblade",
+    "species": ["demon"],
+    "class": ["demonhunter"]
+  },
+  {
+    "chess": "tiny",
+    "species": ["element"],
+    "class": ["warrior"]
+  },
+  {
+    "chess": "morphling",
+    "species": ["element"],
+    "class": ["assassin"]
+  }
+]
