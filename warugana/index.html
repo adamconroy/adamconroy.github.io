@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>仮名をおぼえるな</title>
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+  <script src="static/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="static/js/createjs.min.js")></script> <!-- createjs doesnt properly export a module -->
+  <script src="static/js/wanakana.min.js")></script>
+  <script type="module" src="static/js/game.js">
+  </script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="menu_container">
+      <div class="neon">
+        <span class="main_menu_title" data-text="Warugana">Warugana</span>
+        <span class="gradient_fire" />
+        <span class="spotlight" />
+      </div>
+      <div class="neon">
+        <span class="main_menu_title" data-text="悪仮名">悪仮名</span>
+        <span class="gradient_fire" />
+        <span class="spotlight" />
+      </div>
+      <div onclick="Game.start()" class="menu hvr-ripple-in">
+        <span style="padding: 4px;">~START~</span>
+      </div>
+    </div>
+    
+    <div id="config_form" class="mainMenuCheckboxContainer">
+      <div class="mainMenuCheckbox hiraganaCheckbox">
+        <input id="hiragana_checkbox" type="checkbox" checked />
+        <label for="hiragana_checkbox" class="checkbox-label">HIRAGANA</label>
+      </div>
+      <div class="mainMenuCheckbox katakanaCheckbox">
+        <input id="katakana_checkbox" type="checkbox" />
+        <label for="katakana_checkbox" class="checkbox-label">KATAKANA</label>
+      </div>
+    </div>
+
+    <div id="fps"></div>
+    <canvas id="board" width="800" height="600"></canvas>
+    <input id="kanainput" type="text" name="typing" style="display:none;">
+  </div> 
+</body>
+</html>

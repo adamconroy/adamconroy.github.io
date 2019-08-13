@@ -1,0 +1,198 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+
+  -moz-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+}
+
+.content {
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon {
+    position: relative;
+    overflow: hidden;
+    filter: brightness(200%);
+}
+
+.main_menu_title {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 180px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    user-select: none;
+
+  text-shadow: 0 0 3px gold;
+}
+
+.gradient_fire {
+    position: absolute;
+    background: linear-gradient(45deg, red, gold, lightgreen, gold, red);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+}
+
+.spotlight {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(
+            circle,
+            white,
+            transparent 25%
+        ) center / 25% 25%,
+        radial-gradient(
+            circle,
+            white,
+            black 25%
+        ) center / 12.5% 12.5%;
+    animation: light 5s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
+.menu {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: rgb(0, 238, 255);
+  font-size: 120px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+
+  text-shadow:
+    0 0 5px green,
+    0 0 10px green,
+    0 0 20px green
+    0 0 40px rgb(49, 49, 49),
+    0 0 80px rgb(49, 49, 49),
+    0 0 90px rgb(49, 49, 49),
+    0 0 100px rgb(49, 49, 49),
+    0 0 150px rgb(49, 49, 49);
+}
+
+.menu:hover {
+  transition: all .5s ease;
+  color: cyan;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+}
+
+.mainMenuCheckboxContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMenuCheckbox {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  width: 180px;
+  margin: 20px;
+}
+
+.mainMenuCheckbox label {
+  display: block;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+
+  text-shadow:
+    0 0 5px darkgrey,
+    0 0 10px darkgrey,
+    0 0 20px darkgrey,
+    0 0 40px rgb(49, 49, 49),
+    0 0 80px rgb(49, 49, 49),
+    0 0 90px rgb(49, 49, 49),
+    0 0 100px rgb(49, 49, 49),
+    0 0 150px rgb(49, 49, 49);
+}
+
+.hiraganaCheckbox input[type=checkbox]:checked + label {
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #609fd3,
+    0 0 80px #609fd3,
+    0 0 90px #609fd3,
+    0 0 100px #609fd3,
+    0 0 150px #609fd3;
+}
+
+.katakanaCheckbox input[type=checkbox]:checked + label {
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #dd75a8,
+    0 0 80px #dd75a8,
+    0 0 90px #dd75a8,
+    0 0 100px #dd75a8,
+    0 0 150px #dd75a8;
+}
+
+#board {
+  display: none;
+  margin: 10px;
+  z-index: 100;
+
+  filter: drop-shadow(0 0 0.75rem magenta);
+
+  background-color: black;
+  border: 2px orange;
+}
+
+#kanainput {
+  margin: 16px;
+  font-size: 48px;
+  background-color: black;
+  color: white;
+/*  border: 2px solid magenta;*/
+  border: none;
+  filter: drop-shadow(0 0 0.75rem cyan);
+  width: 100px;
+  text-align:center;
+}

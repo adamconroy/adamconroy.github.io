@@ -1,0 +1,6 @@
+Kanji/Kana based typing/drawing of the dead?
+
+Could have multiple modes so you can type it (maybe vocab based like show the kanji and have to type the word WK style)
+or the fancier kanji drawing mode, an easy mode that shows the strokes and then a hard mode that doesnt.
+
+- handwriting to kana?
