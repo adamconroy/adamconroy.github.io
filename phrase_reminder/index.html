@@ -1,0 +1,108 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+        }
+        #phrase {
+            color:slategray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 64px;
+        }
+    </style>
+    <script type='text/javascript'>
+        var timer = 0;
+        var curPhrase = 0;
+
+        var phrases = [
+"I'm thinking about moving recently",
+"Why don't we go and grab a coffee or something?",
+"I have to go back to work.",
+"I have to go shopping.",
+"Excuse me, how do you get to Toyko station?",
+"I forgot how to say that in Japanese",
+"Why did I do that?",
+"What kind of Japanese phrases do you want to learn?",
+"I want to do something like travel, shopping or sports.",
+"Can you get me a banana if they have it?",
+"How do you say that in Japanese?",
+"Anything will be ok.",
+"Which is better?",
+"Which do you think is better?",
+"What is your favorite game?",
+"What kind of games do you play?",
+"I don't really like FPS games.",
+"Is there anything else?",
+"Please get used to it",
+"I could never say such an embarrassing thing",
+"There's so many things I want to do.",
+"If you come to Japan you should try Japanese curry.",
+"When did you start learning Japanese?",
+"Where did you buy that?",
+"You can say that too.",
+"Is it so different?",
+"It’s pretty useful",
+"Would you say that again?",
+"Sorry for being late",
+"Because of all the recent various things in the world I am very tired.",
+"Keep going this way, and turn right at the 7/11, you'll see it on your left.",
+"How long does it take to get there?",
+"What are you trying to say?",
+"What time did you wake up today?",
+"What time do you start work tomorrow?",
+"What were you doing?",
+"I don’t know how to write it",
+"I knew you were going to say that.",
+"Do you know Hayashi Rice? No I’ve never heard of it.",
+"I told Yamashita that I would go meet him, but first I need to fix my car.",
+"How do I pause? This just keeps going.",
+"That’s it for today.",
+"we were going to have meeting but because of the train accident I couldn't make it to the Cafe.",
+"I think three phrases for a day is just the right amount.",
+"I’ve wanted to play some sports but I don’t have much time.",
+"Like this.",
+"I should finish this work before tomorrow.",
+"Other people use it however it's not a phrase that I use very often.",
+"Almost correct.",
+"Close.",
+"That was close.",
+"There're not so many.",
+"Is it correct?",
+"No it's wrong.",
+"Something like that.",
+"I think so too.",
+"I don’t really like that.",
+"That was really good but the pronunciation was a little wrong."];
+
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+
+        function getPhrase() {
+            return document.getElementById('phrase');
+        }
+
+        shuffleArray(phrases);
+
+        setInterval(function() {
+            curPhrase++;
+
+            if (curPhrase >= phrases.length) {
+                curPhrase = 0;
+            }
+
+            getPhrase().innerHTML = phrases[curPhrase];
+
+        }, 5000);
+    </script>
+</head>
+<body>
+    <div id='phrase'>
+    <div>
+</body>
+</html>
