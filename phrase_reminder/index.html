@@ -87,9 +87,7 @@
             return document.getElementById('phrase');
         }
 
-        shuffleArray(phrases);
-
-        setInterval(function() {
+	function showPhrase() {
             curPhrase++;
 
             if (curPhrase >= phrases.length) {
@@ -97,8 +95,17 @@
             }
 
             getPhrase().innerHTML = phrases[curPhrase];
+	}
 
-        }, 5000);
+        shuffleArray(phrases);
+
+        setInterval(function() {
+		showPhrase();
+        }, 1000*60*10);
+
+	document.addEventListener("DOMContentLoaded", function() {
+		showPhrase();
+	});
     </script>
 </head>
 <body>
