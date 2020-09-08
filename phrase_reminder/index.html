@@ -41,7 +41,7 @@
     <script type='text/javascript'>
         var timer = 0;
         var curPhrase = 0;
-        var intervalMinutes = 10;
+        var intervalSeconds = 600;
 
         var phrases = [];
 
@@ -71,11 +71,11 @@
         shuffleArray(phrases);
 
         function start() {
-            // get the interval minutes
+            // get the interval seconds
             var v = parseInt(document.getElementById("interval_input").value);
 
             if (!!v) {
-                intervalMinutes = v;
+                intervalSeconds = v;
             }
 
             // get the phrases
@@ -87,7 +87,7 @@
 
             setInterval(function () {
                 showPhrase();
-            }, 1000 * 60 * intervalMinutes);
+            }, 1000 * intervalSeconds);
 
             document.getElementById("setup_content").hidden = true;
 
@@ -106,8 +106,8 @@
         <textarea id="phrase_input" placeholder="Paste phrases to study here" rows="20" cols="80"></textarea>
         <div>-----</div>
         <div>
-            <div>Minutes between phrases:
-                <input id="interval_input" value="10"></input>
+            <div>Seconds between phrases:
+                <input id="interval_input" value="600"></input>
             </div>
         </div>
         <button id="phrase_button" onclick="start()">Start</button>
